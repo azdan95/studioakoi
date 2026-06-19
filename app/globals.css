@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #EA5C1F;
+  --accent-light: #f07040;
+  --surface-1: #ececec;
+  --surface-2: #e0e0e0;
+  --surface-3: #4F5D75;
+  --background: #F5F5F5;
+  --foreground: #212431;
+  --text-primary: #212431;
+  --text-secondary: #4F5D75;
+  --text-muted: #9a9a9a;
+  --border: rgba(33,36,49,0.1);
+  --hero-wash: rgba(245,233,220,0.7);
+  --backdrop-scrim: transparent;
+}
+
+:root[data-theme="dark"] {
+  --accent: #EA5C1F;
+  --accent-light: #f07040;
+  --surface-1: #1e212b;
+  --surface-2: #272b37;
+  --surface-3: #4F5D75;
+  --background: #14161d;
+  --foreground: #ECEEF2;
+  --text-primary: #ECEEF2;
+  --text-secondary: #aab2c2;
+  --text-muted: #6f7787;
+  --border: rgba(236,238,242,0.12);
+  --hero-wash: rgba(95,62,40,0.40);
+  --backdrop-scrim: rgba(20,22,29,0.55);
+}
+
+html { scroll-behavior: smooth; }
+
+*, *::before, *::after { cursor: none !important; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+::selection {
+  background: rgba(234,92,31,0.2);
+  color: var(--text-primary);
+}
+
+/* glass / chromatic-aberration display name */
+.chroma { position: relative; display: inline-block; }
+.chroma-base {
+  position: relative;
+  z-index: 2;
+  color: var(--text-primary);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.30), 0 -1px 1px rgba(0,0,0,0.05);
+}
+.chroma-ghost {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.chroma-r { color: #ff2d55; transform: translateX(-0.04em); filter: blur(0.6px); animation: chroma-r 7s ease-in-out infinite; }
+.chroma-b { color: #19b6ff; transform: translateX(0.04em);  filter: blur(0.6px); animation: chroma-b 7s ease-in-out infinite; }
+.chroma:hover .chroma-r { transform: translateX(-0.07em); }
+.chroma:hover .chroma-b { transform: translateX(0.07em); }
+@keyframes chroma-r { 0%,100% { transform: translateX(-0.04em); } 50% { transform: translate(-0.085em, 0.012em); } }
+@keyframes chroma-b { 0%,100% { transform: translateX(0.04em); }  50% { transform: translate(0.085em, -0.012em); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .chroma-r, .chroma-b { animation: none; }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--background); }
+::-webkit-scrollbar-thumb { background: var(--surface-2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
