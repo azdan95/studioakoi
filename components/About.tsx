@@ -38,6 +38,13 @@ export default function About() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:pl-16">
+        {/* mobile meta strip — echoes the desktop side rail */}
+        <div className="lg:hidden flex items-center gap-3 mb-8 text-[10px] tracking-[0.25em] uppercase" style={{ color: "var(--text-secondary)" }}>
+          <span>Interior Architect</span>
+          <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
+          <span>Highlights</span>
+        </div>
+
         {/* section label */}
         <Reveal>
           <div className="flex items-center gap-4 mb-12 md:mb-16">
