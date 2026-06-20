@@ -94,7 +94,7 @@ export default function About() {
               <CountUp
                 to={f.to}
                 suffix={f.suffix}
-                className="block font-[family-name:var(--font-space)] text-5xl md:text-7xl font-bold tracking-tight mb-2 text-[var(--accent)]"
+                className="block font-[family-name:var(--font-space)] text-4xl md:text-7xl font-bold tracking-tight mb-2 text-[var(--accent)]"
               />
               <span className="text-xs tracking-[0.12em] uppercase" style={{ color: "var(--text-secondary)" }}>
                 {f.label}

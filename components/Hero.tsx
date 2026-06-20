@@ -14,7 +14,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col justify-end overflow-hidden" style={{ background: "var(--background)" }}>
+    <section ref={ref} className="relative min-h-svh flex flex-col justify-end overflow-hidden" style={{ background: "var(--background)" }}>
       <motion.div style={{ y }} className="absolute inset-0">
         <GlassBackdrop />
         <div className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none"

@@ -203,7 +203,7 @@ export default function Gallery() {
 
   return (
     <section id="work" ref={ref} style={{ height: `${N * 60}vh` }} className="relative">
-      <div className="sticky top-0 h-screen overflow-hidden flex items-center">
+      <div className="sticky top-0 h-svh overflow-hidden flex items-center">
         {/* header overlay */}
         <div className="absolute top-0 left-0 right-0 z-30 px-6 md:px-10 pt-24 md:pt-28 pointer-events-none">
           <div className="max-w-7xl mx-auto flex items-end justify-between gap-6">
@@ -211,7 +211,7 @@ export default function Gallery() {
               <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: "var(--accent)" }}>Selected Work</p>
               <h2 className="font-[family-name:var(--font-space)] text-4xl md:text-6xl font-bold tracking-tight" style={{ color: "var(--text-primary)" }}>Portfolio</h2>
             </div>
-            <div className="hidden md:flex items-center gap-2 text-xs tracking-[0.15em] uppercase" style={{ color: "var(--text-muted)" }}>
+            <div className="flex items-center gap-2 text-xs tracking-[0.15em] uppercase" style={{ color: "var(--text-secondary)" }}>
               <ArrowLeft size={14} /> Scroll <ArrowRight size={14} />
             </div>
           </div>
