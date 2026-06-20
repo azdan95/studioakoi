@@ -7,19 +7,14 @@ import { Reveal, MaskReveal } from "./anim";
 
 const services = [
   {
+    icon: Lightbulb,
+    title: "Conceptual",
+    desc: "Early-stage concept development, mood and spatial narratives, and visualisation that give a project its direction before a wall goes up.",
+  },
+  {
     icon: Home,
     title: "Residential Design",
     desc: "Homes, apartments and villas designed around how you live — spatial planning, light, and material palettes that feel effortless day to day.",
-  },
-  {
-    icon: Hammer,
-    title: "Interior Fit-Out",
-    desc: "End-to-end fit-out delivery from joinery and finishes to on-site coordination, turning drawings into a fully realised, move-in-ready space.",
-  },
-  {
-    icon: ChefHat,
-    title: "Kitchen Fit-Out",
-    desc: "Bespoke kitchens engineered for the way you cook — ergonomic layouts, custom cabinetry, and seamless appliance and storage integration.",
   },
   {
     icon: PenTool,
@@ -32,9 +27,14 @@ const services = [
     desc: "Resorts, restaurants and lobbies shaped around guest experience — atmosphere, flow, and a strong sense of place rooted in the islands.",
   },
   {
-    icon: Lightbulb,
-    title: "Conceptual",
-    desc: "Early-stage concept development, mood and spatial narratives, and visualisation that give a project its direction before a wall goes up.",
+    icon: Hammer,
+    title: "Interior Fit-Out",
+    desc: "End-to-end fit-out delivery from joinery and finishes to on-site coordination, turning drawings into a fully realised, move-in-ready space.",
+  },
+  {
+    icon: ChefHat,
+    title: "Kitchen Fit-Out",
+    desc: "Bespoke kitchens engineered for the way you cook — ergonomic layouts, custom cabinetry, and seamless appliance and storage integration.",
   },
 ];
 
