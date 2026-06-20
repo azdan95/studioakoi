@@ -6,7 +6,7 @@ brand
 
 ## Users
 
-Prospective clients, collaborators, and studios evaluating Ahmed Shahdan / AKOI Studio for interior architecture work — residential, hospitality, and conceptual spatial design, primarily in and around Malé, Maldives. They arrive on desktop or mobile, often from a referral, an Instagram link, or a direct share, with one question: *is this someone whose taste and craft I trust with a space?* The job to be done is a fast, confident read on point-of-view and competence — enough to reach out. Secondary audience: peers and recruiters scanning experience and tool fluency (Revit, Rhino/Grasshopper, V-Ray, the full stack).
+Prospective clients, collaborators, and studios evaluating Ahmed Shahdan / Studio AKOI for interior architecture work — residential, hospitality, and conceptual spatial design, primarily in and around Malé, Maldives. They arrive on desktop or mobile, often from a referral, an Instagram link, or a direct share, with one question: *is this someone whose taste and craft I trust with a space?* The job to be done is a fast, confident read on point-of-view and competence — enough to reach out. Secondary audience: peers and recruiters scanning experience and tool fluency (Revit, Rhino/Grasshopper, V-Ray, the full stack).
 
 ## Product Purpose
 

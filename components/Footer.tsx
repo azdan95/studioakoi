@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <motion.p initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}}
           className="text-xs tracking-[0.1em]" style={{color:"var(--text-muted)"}}>
-          © 2026 Ahmed Shahdan · AKOI Studio · Malé, Maldives
+          © 2026 Ahmed Shahdan · Studio AKOI · Malé, Maldives
         </motion.p>
         <motion.p initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{delay:0.1}}
           className="text-xs tracking-[0.1em]" style={{color:"var(--text-muted)"}}>

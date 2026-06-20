@@ -26,7 +26,7 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.7 }}
           className="text-xs font-medium tracking-[0.35em] uppercase mb-8"
           style={{ color: "var(--accent)" }}>
-          Portfolio — AKOI Studio
+          Portfolio — Studio AKOI
         </motion.p>
 
         <h1 className="flex flex-col leading-[0.9] mb-2">

@@ -59,7 +59,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.12} className="md:w-72 md:pt-4 shrink-0">
             <p className="text-sm leading-relaxed" style={{ color: "var(--accent)" }}>
-              Interior architect · AKOI Studio, based in Malé, Maldives. Specialising in
+              Interior architect · Studio AKOI, based in Malé, Maldives. Specialising in
               spatial design, fit-out and bespoke interior architecture across residential
               and hospitality work.
             </p>

@@ -23,7 +23,7 @@ const bodoni = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed Shahdan — AKOI Studio",
+  title: "Ahmed Shahdan — Studio AKOI",
   description:
     "Interior architect based in Malé, Maldives. Specializing in spatial design, 3D modeling, and architectural visualization.",
 };
