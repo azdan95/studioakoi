@@ -6,7 +6,7 @@ import { Reveal, MaskReveal, EASE } from "./anim";
 
 const toolGroups = [
   { label: "Drafting & BIM", tools: ["AutoCAD", "Revit", "Rhino 3D", "Grasshopper 3D"] },
-  { label: "3D & Visualisation", tools: ["SketchUp", "3DS Max", "V-Ray"] },
+  { label: "3D & Visualisation", tools: ["SketchUp", "3DS Max", "V-Ray", "Blender"] },
   { label: "Graphics & Layout", tools: ["Photoshop", "Illustrator", "InDesign", "Premiere Pro"] },
 ];
 
