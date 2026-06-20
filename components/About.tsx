@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Reveal, CountUp, EASE } from "./anim";
+import CornerFrame from "./CornerFrame";
 
 const figures = [
   { to: 6, suffix: "+", label: "Years experience" },
@@ -57,12 +58,14 @@ export default function About() {
         {/* heading + side note */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-16 mb-14 md:mb-20">
           <Reveal className="md:flex-1">
-            <h2
-              className="font-[family-name:var(--font-space)] font-bold leading-[0.9] tracking-tight text-balance"
-              style={{ color: "var(--text-primary)", fontSize: "clamp(3rem, 9vw, 6rem)" }}
-            >
-              AHMED SHAHDAN
-            </h2>
+            <CornerFrame interactive className="inline-block px-4 py-3 md:px-6 md:py-4 cursor-default" size={18} offset={-9}>
+              <h2
+                className="font-[family-name:var(--font-space)] font-bold leading-[0.9] tracking-tight text-balance transition-[color,text-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] text-[var(--text-primary)] group-hover/cf:text-[var(--accent)] group-hover/cf:[text-shadow:0_0_34px_rgba(234,92,31,0.30)]"
+                style={{ fontSize: "clamp(3rem, 9vw, 6rem)" }}
+              >
+                AHMED SHAHDAN
+              </h2>
+            </CornerFrame>
           </Reveal>
           <Reveal delay={0.12} className="md:w-72 md:pt-4 shrink-0">
             <p className="text-sm leading-relaxed" style={{ color: "var(--accent)" }}>
@@ -92,23 +95,22 @@ export default function About() {
         </Reveal>
 
         {/* figures */}
-        <div
-          className="grid grid-cols-3 gap-4 py-10 md:py-12 mb-24 md:mb-32"
-          style={{ borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}
-        >
-          {figures.map((f, i) => (
-            <Reveal key={f.label} delay={i * 0.1}>
-              <CountUp
-                to={f.to}
-                suffix={f.suffix}
-                className="block font-[family-name:var(--font-space)] text-4xl md:text-7xl font-bold tracking-tight mb-2 text-[var(--accent)]"
-              />
-              <span className="text-xs tracking-[0.12em] uppercase" style={{ color: "var(--text-secondary)" }}>
-                {f.label}
-              </span>
-            </Reveal>
-          ))}
-        </div>
+        <CornerFrame className="px-2 py-10 md:py-12 mb-24 md:mb-32" size={18} offset={-8}>
+          <div className="grid grid-cols-3 gap-4">
+            {figures.map((f, i) => (
+              <Reveal key={f.label} delay={i * 0.1}>
+                <CountUp
+                  to={f.to}
+                  suffix={f.suffix}
+                  className="block font-[family-name:var(--font-space)] text-4xl md:text-7xl font-bold tracking-tight mb-2 text-[var(--accent)]"
+                />
+                <span className="text-xs tracking-[0.12em] uppercase" style={{ color: "var(--text-secondary)" }}>
+                  {f.label}
+                </span>
+              </Reveal>
+            ))}
+          </div>
+        </CornerFrame>
 
         {/* experience + education */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">

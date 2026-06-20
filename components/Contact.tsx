@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
+import CornerFrame from "./CornerFrame";
 
 export default function Contact() {
   const ref = useRef<HTMLElement>(null);
@@ -70,6 +71,7 @@ export default function Contact() {
         </div>
 
         <motion.div initial={{opacity:0,x:30}} animate={inView?{opacity:1,x:0}:{}} transition={{delay:0.2,duration:0.7,ease:[0.22,1,0.36,1]}}>
+          <CornerFrame className="p-6 md:p-8" size={18}>
           {sent ? (
             <div className="h-full flex items-center justify-center rounded-sm p-10 text-center border"
               style={{borderColor:"var(--border)", background:"var(--surface-1)"}}>
@@ -115,6 +117,7 @@ export default function Contact() {
               </motion.button>
             </form>
           )}
+          </CornerFrame>
         </motion.div>
       </div>
     </section>

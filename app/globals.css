@@ -74,6 +74,11 @@ body {
   .chroma-r, .chroma-b { animation: none; }
 }
 
+/* rolling AKOI marquee — intentionally exempt from reduced-motion (slow brand ticker) */
+@keyframes akoi-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.akoi-marquee-track { animation: akoi-marquee 32s linear infinite; }
+.akoi-marquee:hover .akoi-marquee-track { animation-play-state: paused; }
+
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--background); }
 ::-webkit-scrollbar-thumb { background: var(--surface-2); border-radius: 2px; }
